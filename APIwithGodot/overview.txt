@@ -1,0 +1,55 @@
+### **1. Learning Goals & Difficulty**
+- Should this be a **beginner-friendly** introduction to APIs, Django, and Godot, or should it include more advanced concepts (e.g., authentication, error handling)?
+- Do you want to focus on **core concepts** (e.g., REST basics, JSON) or **practical skills** (e.g., deploying the API, testing it)?
+
+### **2. Prerequisites**
+- Do students already know:
+  - Basic Python (functions, loops, lists)?
+  - HTML/CSS (for frontend mockups)?
+  - Godot basics (e.g., how to call HTTP requests from GDScript)?
+- Should we include a **quick Python refresher** or assume prior knowledge?
+
+### **3. Project Scope**
+- Should the API:
+  - Store **simple leaderboard data** (e.g., player names + scores)?
+  - Include **user authentication** (e.g., login/logout)?
+  - Support **real-time updates** (e.g., Godot polls the API)?
+- Should we use a **local database** (SQLite) or a cloud service (e.g., Firebase)?
+
+### **4. Tools & Setup**
+- Should we use:
+  - **Docker** for easy setup?
+  - **Virtual environments** (venv)?
+  - A **local server** (e.g., `python manage.py runserver`) or a cloud service (e.g., Render, Railway)?
+- Should we provide **step-by-step commands** or let students explore?
+
+### **5. Godot Integration**
+- Should we:
+  - Show how to **call the API from GDScript** (e.g., `HTTPRequest` or `GDHTTP`)?
+  - Use a **mock API** (e.g., `http://localhost:8000`) or a **real one** (e.g., `https://api.example.com`)?
+  - Include a **simple UI** in Godot to display the leaderboard?
+
+### **6. Example Workflow**
+- **Part 1 (Django API):**
+  - Create a Django project with Django REST Framework.
+  - Design a **leaderboard model** (e.g., `Player` with `name` and `score`).
+  - Build endpoints for:
+    - `POST /leaderboard` (add a score).
+    - `GET /leaderboard` (fetch all scores).
+    - `GET /leaderboard/<id>` (get a specific score).
+- **Part 2 (Godot):**
+  - Use `HTTPRequest` to send requests to the API.
+  - Display results in a **Godot UI** (e.g., a `Label` or `CanvasLayer`).
+
+---
+### **Next Steps**
+Based on your answers, I can:
+1. **Draft a simplified tutorial** with key concepts.
+2. **Provide code snippets** for Django and Godot.
+3. **Suggest tools/resources** (e.g., tutorials, templates).
+4. **Adjust difficulty** based on feedback.
+
+**Example Questions to Clarify:**
+- *"Should we use SQLite or PostgreSQL?"*
+- *"Do students need to install Python/Django first, or should we guide them?"*
+- *"Should the API include user accounts, or just raw scores?"*
